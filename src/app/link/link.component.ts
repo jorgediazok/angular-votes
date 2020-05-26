@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { Link } from './link.model';
 
 @Component({
@@ -7,7 +7,9 @@ import { Link } from './link.model';
   styleUrls: ['./link.component.css'],
 })
 export class LinkComponent implements OnInit {
-  @Input() link: Link;
+  @HostBinding('attr.class') cssClass = 'row';
+  @Input()
+  link: Link;
 
   constructor() {}
 

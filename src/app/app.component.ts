@@ -15,10 +15,12 @@ export class AppComponent {
       new Link('Google', 'http://google.com', 40),
       new Link('Youtube', 'http://youtube.com', 30),
     ];
-    console.log(this.links);
   }
 
   addLink(title: HTMLInputElement, link: HTMLInputElement) {
+    this.links.push(new Link(title.value, link.value));
+    title.value = '';
+    link.value = '';
     return false;
   }
 }
