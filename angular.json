@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-votes"
+    }
+  },
+  "defaultProject": "angular-votes",
+  "cli": {
+    "analytics": "778582ef-a07f-489b-962e-4c89d3f5ea0f"
+  }
 }
