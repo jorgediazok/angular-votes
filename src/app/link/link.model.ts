@@ -1,4 +1,4 @@
-class Link {
+export class Link {
   title: string;
   link: string;
   votes: number;
